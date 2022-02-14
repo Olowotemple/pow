@@ -1,0 +1,10 @@
+mutation Register($credentials: UserCredentials!) {
+  register(credentials: $credentials) {
+    errors {
+      ...ErrorFields
+    }
+    user {
+      ...UserFields
+    }
+  }
+}
